@@ -133,7 +133,7 @@ Vue.js에서 React로 넘어가는 과정에서 러닝커브를 빠르게 극복
                       <img
                         key={index}
                         src={image}
-                        className={`w-1/${project.images?.length ?? 1} h-auto rounded-lg object-cover border border-border`}
+                        className={`h-auto rounded-lg object-cover border border-border ${project?.images?.length && project.images.length > 1 ? `w-1/${project.images.length}` : 'w-full'}`}
                       />
                     ))}
                   </div>

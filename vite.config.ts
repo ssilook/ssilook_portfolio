@@ -11,4 +11,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: '/ssilook_portfolio/'
 })
