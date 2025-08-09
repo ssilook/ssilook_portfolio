@@ -14,8 +14,8 @@ function Header() {
       <NavigationMenu viewport={false} className="max-w-auto p-2">
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-              <Link to="/Introduce">New Portfolio</Link>
+            <NavigationMenuLink asChild className={`${navigationMenuTriggerStyle()} bg-yellow-100 text-black`}>
+              <Link to="/ssilook_portfolio/Portfolio">New Portfolio</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem className="flex">

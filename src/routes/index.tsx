@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import DefaultLayout from '@/layouts/DefaultLayout'
-import Introduce from '@/pages/Introduce'
+import Portfolio from '@/pages/Portfolio'
 
 const router = createBrowserRouter([
     {
@@ -12,8 +12,12 @@ const router = createBrowserRouter([
       // errorElement: <ErrorPageFull />,
       children: [
         {
-					path: '/Introduce',
-					element: <Introduce />
+					index: true,
+					element: <Portfolio />
+				},
+        {
+					path: '/ssilook_portfolio/Portfolio',
+					element: <Portfolio />
 				}
       ]
     },
