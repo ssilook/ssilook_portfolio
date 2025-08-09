@@ -5,17 +5,22 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Billing1 from "@/assets/images/Billing1.png";
+/* import Billing2 from "@/assets/images/Billing2.png";
+import Ops1 from "@/assets/images/Ops1.png";
+import BSS1 from "@/assets/images/BSS1.png";
+import BSS2 from "@/assets/images/BSS2.png"; */
 
 const Megazone = () => {
   return (
-    <div className="py-10">
+    <div>
       {/* --- 프로젝트 섹션 카드 --- */}
       <Card className="overflow-hidden border-border bg-card/50">
         <CardHeader>
           {/* h1 대신 span을 사용하여 의미에 맞게 수정 */}
           <CardTitle className="text-2xl font-bold flex items-center flex-wrap">
             <span className="text-muted-foreground mr-2">프로젝트:</span>
-            <span className="text-primary">개인 포트폴리오 웹사이트</span>
+            <span className="text-primary">Hyper Billing</span>
           </CardTitle>
         </CardHeader>
 
@@ -23,7 +28,7 @@ const Megazone = () => {
           {/* 1. 이미지 영역 */}
           <div>
             <img
-              src="https://placehold.co/1200x600/171717/facc15?text=Project+Screenshot"
+              src={Billing1}
               alt="프로젝트 스크린샷"
               className="w-full h-auto rounded-lg object-cover border border-border"
             />
@@ -54,10 +59,10 @@ const Megazone = () => {
             </div>
           </div>
 
-          {/* 4. 맡은 일 */}
+          {/* 4. 역할 */}
           <div className="space-y-3">
             <h3 className="text-xl font-semibold border-l-4 border-primary pl-3">
-              맡은 일
+              역할
             </h3>
             <ul className="list-disc list-inside space-y-2 pt-2 text-muted-foreground">
               <li>Vite와 TypeScript를 사용한 프로젝트 초기 설정 및 구조 설계</li>

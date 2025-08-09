@@ -6,32 +6,27 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import { ExternalLink } from 'lucide-react';
 
 function Header() {
   return (
     <>
-      <div>
-        <NavigationMenu viewport={false}>
-          <NavigationMenuList
-            style={{ 
-              display: 'flex',
-              justifyContent: 'space-around',
-              padding: '5px',
-              borderBottom: '1px solid #dee2e6',
-            }}>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                <Link to="/first-birthday-party/type1">Type1</Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                <Link to="/first-birthday-party/type2">Type2</Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-      </div>
+      <NavigationMenu viewport={false} className="max-w-auto p-2">
+        <NavigationMenuList>
+          <NavigationMenuItem>
+            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+              <Link to="/Introduce">New Portfolio</Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem className="flex">
+            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+              <a href="https://ssilook.github.io/SINOOK_CONTENTS/" target="_blank" rel="noopener noreferrer">Old Portfolio
+              </a>
+            </NavigationMenuLink>
+            <ExternalLink size={24} className="m-auto" />
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
     </>
   )
 }

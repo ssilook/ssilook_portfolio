@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom'
 
 function Container() {
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto w-full">
       <Outlet />
     </div>
   )
